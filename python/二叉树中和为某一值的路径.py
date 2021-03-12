@@ -33,7 +33,7 @@ def path_sum(root, sum):
 
 	def recur(root, tar):
 		if root is None: return
-		path.append(root)
+		path.append(root.val)
 		tar -= root.val
 
 		if tar == 0 and not root.left and not root.right:

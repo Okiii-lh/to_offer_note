@@ -12,7 +12,7 @@ def tree_to_double_list(root):
 		dfs(cur.left)
 
 		if pre:
-			pre.right, cur.left = cur, self.pre
+			pre.right, cur.left = cur, pre
 		else:
 			head = pre
 		pre = cur
