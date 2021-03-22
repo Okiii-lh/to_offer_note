@@ -22,5 +22,5 @@ def permutation(str):
 			dfs(x+1)
 			c[i], c[x] = c[x], c[i]
 
-	dfs(0)
+	dfs(x)
 	return res
