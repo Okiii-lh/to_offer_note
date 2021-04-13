@@ -6,7 +6,6 @@ def  minNumber(nums):
 			return
 		i = l
 		j = r
-		pivot = strs[l]
 		while i < j:
 			while i < j and strs[j] + strs[l] > strs[l] + strs[j]:
 				j -= 1
