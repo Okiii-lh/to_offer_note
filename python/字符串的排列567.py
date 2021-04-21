@@ -31,4 +31,5 @@ def checkInclusion(s1, s2):
 
 
 def checkInclusion(self, s1: str, s2: str) -> bool:
-        return any([collections.Counter(s1) == collections.Counter(s2[i: i + len(s1)]) for i in range(0, len(s2) - len(s1) + 1)])
+        return any([collections.Counter(s1) == collections.Counter(s2[i: i + len(s1)]) 
+        		for i in range(0, len(s2) - len(s1) + 1)])
